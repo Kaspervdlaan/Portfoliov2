@@ -12,7 +12,7 @@ function Header() {
     }
 
     return (
-        <header className="flex fixed w-screen justify-between h-20">
+        <header className="flex fixed w-screen bg-black text-white justify-between h-20 p-1">
             <picture className="p-1 z-10">
                 <img className="h-full" src={logo} alt="logo"/>
             </picture>
@@ -24,7 +24,7 @@ function Header() {
                 <li className='px-6'>Contact</li>
             </ul>
 
-            {menu && <div className="flex absolute left-0 top-0 h-screen w-screen md:hidden items-center justify-center">
+            {menu && <div className="flex absolute left-0 top-0 h-screen w-screen md:hidden items-center justify-center bg-black">
                 <ul className="flex flex-col gap-5 text-2xl items-center">
                     <li className='px-6'>Projects</li>
                     <li className='px-6'>About</li>
