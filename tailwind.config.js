@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         'dark-color':"#0d0b0a",
-        'accent-color':"hsla(0,0%,100%,0.25)",
+        'accent-color':"hsla(0,0%,100%,0.2)",
         'pink-color':"#cc84b7",
         'orange-color':"#d59623",
         'green-color':"#9dcb87",
@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundColor: {
         'dark-color':"#0d0b0a",
-        'accent-color':"hsla(0,0%,100%,0.25)",
+        'accent-color':"hsla(0,0%,100%,0.2)",
         'pink-color':"#cc84b7",
         'orange-color':"#d59623",
         'green-color':"#9dcb87",
@@ -24,7 +24,7 @@ module.exports = {
       },
       textColor: {
         'dark-color':"#0d0b0a",
-        'accent-color':"hsla(0,0%,100%,0.25)",
+        'accent-color':"hsla(0,0%,100%,0.2)",
         'pink-color':"#cc84b7",
         'orange-color':"#d59623",
         'green-color':"#9dcb87",

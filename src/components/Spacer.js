@@ -1,9 +1,8 @@
 import React from 'react';
 
-function Spacer() {
+function Spacer({page}) {
     return (
-        <div className="h-[15vh] bg-bg-color">
-
+        <div id={page} className="h-[15vh] bg-bg-color">
         </div>
     );
 }
