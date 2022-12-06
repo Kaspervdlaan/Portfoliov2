@@ -3,7 +3,7 @@ import React from 'react';
 function Home({page}) {
 
     return (
-        <main id={page} className="flex items-center justify-center h-[100vh] bg-fixed bg-center bg-cover bg-parallax-image">
+        <main id={page} className="snap-start flex items-center justify-center h-[100vh] bg-fixed bg-center bg-cover bg-parallax-image">
             <section className="text-3xl text-white text-center md:text-4xl">
                 <h1>Kasper van der Laan</h1>
                 <h2>a Fullstack Developer</h2>

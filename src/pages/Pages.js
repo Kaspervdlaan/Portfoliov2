@@ -8,11 +8,13 @@ import Contact from "./Contact";
 
 function Pages() {
     return (
-        <div>
+        <div className="md:snap-y md:snap-proximity h-screen w-screen overflow-x-hidden scroll-smooth">
             {/*<Spacer*/}
             {/*    page="home"*/}
             {/*/>*/}
+
             <Home page="home"/>
+
             {/*<Spacer*/}
             {/*    page="projects"*/}
             {/*/>*/}
