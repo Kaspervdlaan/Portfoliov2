@@ -3,9 +3,9 @@ import Card from "../components/Card";
 import galactic from "../assets/galactic.png";
 import bvb from "../assets/bvb.png";
 
-function Projects() {
+function Projects({page}) {
     return (
-        <main className="md:min-h-[90vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl">
+        <main id={page} className="md:min-h-[100vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl">
 
 
             <section className="flex justify-center flex-wrap h-fit gap-5 mx-20">

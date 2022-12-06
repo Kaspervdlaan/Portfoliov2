@@ -9,22 +9,22 @@ import Contact from "./Contact";
 function Pages() {
     return (
         <div>
-            <Spacer
-                page="home"
-            />
-            <Home/>
-            <Spacer
-                page="projects"
-            />
-            <Projects/>
-            <Spacer
-                page="about"
-            />
-            <About/>
-            <Spacer
-                page="contact"
-            />
-            <Contact/>
+            {/*<Spacer*/}
+            {/*    page="home"*/}
+            {/*/>*/}
+            <Home page="home"/>
+            {/*<Spacer*/}
+            {/*    page="projects"*/}
+            {/*/>*/}
+            <Projects page="projects"/>
+            {/*<Spacer*/}
+            {/*    page="about"*/}
+            {/*/>*/}
+            <About page="about"/>
+            {/*<Spacer*/}
+            {/*    page="contact"*/}
+            {/*/>*/}
+            <Contact page="contact"/>
             {/*<Services/>*/}
             {/*<Spacer/>*/}
 

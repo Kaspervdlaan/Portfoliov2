@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser"
 import swal from "sweetalert";
 import logo from "../assets/logo.png"
 
-function Contact() {
+function Contact({page}) {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -30,8 +30,7 @@ function Contact() {
             })
     };
     return (
-        <main
-            className="md:min-h-[90vh] h-auto flex flex-col md:flex-row items-center text-white justify-center gap-8 max-w-screen-3xl ">
+        <main id={page} className="md:min-h-[100vh] h-auto flex flex-col md:flex-row items-center text-white justify-center gap-8 max-w-screen-3xl ">
 
             <section className="md:w-[40%] text-xl mb-4">
                 <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center">

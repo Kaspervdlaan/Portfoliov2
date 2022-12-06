@@ -19,12 +19,12 @@ function Header() {
     }
 
     return (
-        <header className="flex fixed w-screen bg-dark-color text-white justify-between h-[15vh] p-1 z-10 border-accent-color border-b shadow-xl">
+        <header className="flex fixed w-screen text-white justify-between h-[15vh] p-1 z-10">
             <picture className="flex items-center p-1 z-10 ml-4">
                 <a href="#home" onClick={closeMenu}><img className="h-20" src={logo} alt="logo"/></a>
             </picture>
 
-            <ul className="hidden md:flex items-center text-xl mr-4">
+            <ul className="hidden md:flex items-center text-xl mr-8">
                 <a href="#projects"><li className='px-6 hover:text-pink-color hover:underline underline-offset-2 cursor-pointer'>Projects</li></a>
                 <a href="#about"><li className='px-6 hover:text-blue-color hover:underline underline-offset-2 cursor-pointer'>About</li></a>
                 <a href=""><li className='px-6 hover:text-green-color hover:underline underline-offset-2 cursor-pointer'>Services</li></a>
