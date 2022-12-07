@@ -47,6 +47,7 @@ function Projects({page}) {
                     image={bvb}
                     title="Bureau van Breukelen"
                     descOne="Website made for client. Bureau van Breukelen porfolio website."
+                    descTwo="Deserunt magnam modi mollitia, quos recusandae vitae."
                     github="https://github.com/Kaspervdlaan/Bureau-van-Breukelen"
                     liveDemo="https://melodious-mousse-49311c.netlify.app/"
                     react="ReactJs"
@@ -60,6 +61,17 @@ function Projects({page}) {
                     descOne="Front-end space news/data web application featuring data from five different api endpoints."
                     github=""
                     liveDemo=""
+                    react="ReactJs"
+                    css="Tailwind"
+                />
+
+                <Card
+                    image={bvb}
+                    title="Bureau van Breukelen"
+                    descOne="Website made for client. Bureau van Breukelen porfolio website."
+                    descTwo="Deserunt magnam modi mollitia, quos recusandae vitae."
+                    github="https://github.com/Kaspervdlaan/Bureau-van-Breukelen"
+                    liveDemo="https://melodious-mousse-49311c.netlify.app/"
                     react="ReactJs"
                     css="Tailwind"
                 />

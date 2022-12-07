@@ -10,27 +10,44 @@ function About({page}) {
     const isInView = useInView(ref)
     const animation = useAnimation();
 
+    const animationLeft = () => {
+        animation.start({
+            x: 0,
+            transition: {
+                type: 'spring', duration: .8,
+                staggerChildren: 1,
+                delay: .1
+            }
+        })
+    }
+
+    const animationRight = () => {
+        animation.start({
+            x: 0,
+            transition: {
+                type: 'spring', duration: .8,
+                staggerChildren: 1,
+                delay: .1
+            }
+        })
+    }
+
     useEffect(() => {
         if(isInView){
-            animation.start({
-                y: 0,
-                transition: {
-                    type: 'spring', duration: .8,
-                    staggerChildren: 1,
-                    delay: .1
-                }
-            })
+         animationLeft();
+         animationRight();
+
         }
         if (!isInView){
             animation.start({
-                y: 200
+                x: 200
             })
         }
         console.log(isInView)
     }, [isInView])
 
     return (
-        <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col lg:flex-row items-center text-white text-5xl justify-center gap-8 max-w-screen-3xl ">
+        <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col lg:flex-row items-center text-white text-5xl justify-center gap-8 max-w-screen-3xl bg-black-color ">
             <motion.section ref={ref} animate={animation} className="flex flex-col flex-1 items-center lg:items-end text-center md:text-right px-4">
                 <h2 className="mb-4 font-bold">
                     <span className="hover:text-pink-color duration-200">Kasper </span>
@@ -45,12 +62,12 @@ function About({page}) {
                     Nisi, odit repudiandae.
                 </p>
                 <p className="flex flex-wrap text-green-color text-7xl">
-                    <FaHtml5 className="hover:text-blue-color"/>
-                    <FaCss3Alt className="hover:text-blue-color"/>
-                    <FaJsSquare className="hover:text-blue-color"/>
-                    <FaReact className="mx-1 hover:text-blue-color"/>
-                    <SiTailwindcss className="hover:text-blue-color"/>
-                    <FaGitAlt className="hover:text-blue-color"/>
+                    <FaHtml5 className=""/>
+                    <FaCss3Alt className=""/>
+                    <FaJsSquare className=""/>
+                    <FaReact className="mx-1 "/>
+                    <SiTailwindcss className=""/>
+                    <FaGitAlt className=""/>
                 </p>
             </motion.section>
 

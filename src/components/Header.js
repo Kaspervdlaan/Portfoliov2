@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import logo from "../assets/logo.png"
 import { FaHamburger} from "react-icons/fa"
 import { ImCross } from "react-icons/im"
+import {animate, motion} from "framer-motion";
 
 import Aside from "./Aside";
 
@@ -20,22 +21,20 @@ function Header() {
 
     return (
         <header className="flex fixed w-screen text-white justify-between h-[15vh] p-1 z-10">
-            <picture className="flex items-center p-1 z-10 ml-4">
+            <motion.picture animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: -200}} transition={{type: 'spring',delay: .2, duration: .7}} className="flex items-center p-1 z-10 ml-4">
                 <a href="#home" onClick={closeMenu}><img className="h-20" src={logo} alt="logo"/></a>
-            </picture>
+            </motion.picture>
 
             <ul className="hidden md:flex items-center text-xl mr-8">
-                <a href="#projects"><li className='px-6 hover:text-pink-color hover:underline underline-offset-2 cursor-pointer'>Projects</li></a>
-                <a href="#about"><li className='px-6 hover:text-blue-color hover:underline underline-offset-2 cursor-pointer'>About</li></a>
-                <a href=""><li className='px-6 hover:text-green-color hover:underline underline-offset-2 cursor-pointer'>Services</li></a>
-                <a href="#contact"><li className='px-6 hover:text-orange-color hover:underline underline-offset-2 cursor-pointer'>Contact</li></a>
+                <motion.a animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: -200}} transition={{type: 'spring',delay: .3, duration: .7}} href="#projects"><li className='px-6 hover:text-pink-color hover:underline underline-offset-2 cursor-pointer'>Projects</li></motion.a>
+                <motion.a animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: -200}} transition={{type: 'spring',delay: .4, duration: .7}} href="#about"><li className='px-6 hover:text-blue-color hover:underline underline-offset-2 cursor-pointer'>About</li></motion.a>
+                <motion.a animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: -200}} transition={{type: 'spring',delay: .5, duration: .7}} href="#contact"><li className='px-6 hover:text-orange-color hover:underline underline-offset-2 cursor-pointer'>Contact</li></motion.a>
             </ul>
 
              <div className={menu ? "flex absolute right-0 top-0 h-screen w-screen md:hidden items-center justify-center bg-dark-color duration-300 bg-opacity-90" : "flex absolute right-[-100vw] top-0 h-screen w-screen md:hidden items-center justify-center bg-dark-color duration-300"}>
                 <ul className="flex flex-col gap-8 text-2xl items-center ">
                     <a href="#projects" onClick={handleMenu}><li className='px-6 '>Projects</li></a>
                     <a href="#about" onClick={handleMenu}><li className='px-6 '>About</li></a>
-                    <a href="" onClick={handleMenu}><li className='px-6 '>Services</li></a>
                     <a href="#contact" onClick={handleMenu}><li className='px-6 '>Contact</li></a>
                 </ul>
             </div>

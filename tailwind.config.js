@@ -7,6 +7,7 @@ module.exports = {
         'parallax-image': "url('./assets/parallax.jpg')",
       },
       colors: {
+        'black-color':"#151212",
         'dark-color':"#0d0b0a",
         'accent-color':"hsla(0,0%,100%,0.2)",
         'pink-color':"#cc84b7",
