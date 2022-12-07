@@ -1,32 +1,37 @@
 import React from 'react';
 import Home from "./Home";
 import Projects from "./Projects";
-import Spacer from "../components/Spacer";
 import About from "./About";
-import Services from "./Services";
 import Contact from "./Contact";
 
-function Pages() {
+function Pages({state, setProjects, setAbout, setContact, setNone}) {
     return (
-        <div>
-            <Spacer
-                page="home"
+        <div className="md:snap-y md:snap-proximity h-screen w-screen overflow-x-hidden scroll-smooth">
+            <Home page="home"
+                  state={state}
+                  setNone={setNone}
+                  setProjects={setProjects}
+                  setAbout={setAbout}
+                  setContact={setContact}
             />
-            <Home/>
-            <Spacer
-                page="projects"
+
+            <Projects page="projects"
+                      state={state}
+                      setNone={setNone}
+                      setProjects={setProjects}
             />
-            <Projects/>
-            <Spacer
-                page="about"
+
+            <About page="about"
+                   state={state}
+                   setNone={setNone}
+                   setAbout={setAbout}
             />
-            <About/>
-            <Spacer
-                page="contact"
+
+            <Contact page="contact"
+                     state={state}
+                     setNone={setNone}
+                     setContact={setContact}
             />
-            <Contact/>
-            {/*<Services/>*/}
-            {/*<Spacer/>*/}
 
         </div>
     );
