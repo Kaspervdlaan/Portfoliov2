@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Card from "../components/Card";
 import galactic from "../assets/galactic.png";
 import bvb from "../assets/bvb.png";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { useInViewport } from 'react-in-viewport';
 
 
-function Projects({page}) {
+function Projects({page, setProjects, setNone}) {
+    const projectRef = useRef();
+    const { inViewport } = useInViewport(projectRef);
+
+
+    if (inViewport) {
+        setProjects()
+    }
 
     return (
         <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl ">
 
-            <section className="flex justify-center flex-wrap h-fit gap-5 m-20">
+            <section ref={projectRef} className="flex justify-center flex-wrap h-fit gap-5 m-20">
 
                 <Card
                     image={galactic}

@@ -2,12 +2,20 @@ import React from 'react';
 import logo from "../assets/logo.png"
 import {FaCss3Alt, FaHtml5, FaGitAlt, FaJsSquare, FaReact} from "react-icons/fa";
 import {SiTailwindcss} from "react-icons/si";
+import {useRef} from "react";
+import {useInViewport} from "react-in-viewport";
 
-function About({page}) {
+function About({page, setAbout, setNone}) {
+    const myRef = useRef();
+    const { inViewport } = useInViewport(myRef);
+
+    if (inViewport) {
+        setAbout()
+    }
 
     return (
         <main id={page} className="snap-start min-h-[100vh] py-24 flex flex-col lg:flex-row items-center text-white text-4xl md:text-5xl justify-center gap-8 max-w-screen-3xl bg-black-color ">
-            <section className="flex flex-col flex-1 items-center lg:items-end text-center md:text-right px-4">
+            <section ref={myRef} className="flex flex-col flex-1 items-center lg:items-end text-center md:text-right px-4">
 
                 <h2 className="mb-4  font-bold">
                     <span className="hover:text-pink-color duration-200">Kasper </span>
