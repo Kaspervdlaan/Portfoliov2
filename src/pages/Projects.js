@@ -1,38 +1,17 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import Card from "../components/Card";
 import galactic from "../assets/galactic.png";
 import bvb from "../assets/bvb.png";
-import {animate, motion, useInView, useAnimation} from 'framer-motion'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 function Projects({page}) {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
-    const animation = useAnimation();
-
-    useEffect(() => {
-        if(isInView){
-            animation.start({
-                y: 0,
-                transition: {
-                    type: 'spring',
-                    duration: .8,
-                    delay: .1
-                }
-            })
-        }
-        if (!isInView){
-            animation.start({
-                y: 200
-            })
-        }
-        console.log(isInView)
-    }, [isInView])
 
     return (
         <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl ">
 
+            <section className="flex justify-center flex-wrap h-fit gap-5 m-20">
 
-            <motion.section ref={ref} animate={animation} className="flex justify-center flex-wrap h-fit gap-5 mx-20">
                 <Card
                     image={galactic}
                     title="Galactic Universe Webapp"
@@ -43,6 +22,7 @@ function Projects({page}) {
                     react="ReactJs"
                     css="CSS"
                 />
+
                 <Card
                     image={bvb}
                     title="Bureau van Breukelen"
@@ -77,7 +57,7 @@ function Projects({page}) {
                 />
 
 
-            </motion.section>
+            </section>
         </main>
     );
 }

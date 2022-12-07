@@ -3,10 +3,13 @@ import React from 'react';
 import {FaFirefox, FaGithub} from "react-icons/fa";
 
 
+
 function Card({image, title, descOne, descTwo, github, liveDemo, react, css}) {
     return (
-        <article
+
+            <article
             className="flex flex-col flex-1 min-w-[350px] grow-0 px-4 py-4 my-4 rounded-xl bg-black-color bg-opacity-90 shadow-2xl duration-200 hover:scale-[1.01]">
+
             <picture className="pb-2 cursor-pointer border-b border-b-gray-500">
                 <a href={liveDemo} target="_blank" rel="noreferrer"><img className="rounded" src={image} alt="image"/></a>
             </picture>
@@ -32,6 +35,7 @@ function Card({image, title, descOne, descTwo, github, liveDemo, react, css}) {
 
 
             </div>
+
         </article>
     );
 }

@@ -6,11 +6,11 @@ function Home({page}) {
 
     return (
         <motion.main animate={{opacity: 100}} initial={{opacity: 0}} transition={{duration: 10}} id={page}
-                     className="snap-start flex items-center justify-center gap-[8%] h-[100vh] bg-black-color ">
+                     className="snap-start flex items-center justify-center h-[100vh] bg-black-color ">
 
-            <section className="text-3xl md:text-4xl">
+            <section className="text-3xl md:text-4xl md:ml-20">
                 <motion.h1
-                    className="text-5xl text-orange-color mb-2 shadowxl"
+                    className="md:text-5xl text-orange-color mb-2 shadowxl"
                     animate={{opacity: 100, y: 0}}
                     initial={{opacity: 0, y: -100}}
                     transition={{
@@ -21,7 +21,7 @@ function Home({page}) {
                     Kasper van der Laan
                 </motion.h1>
                 <motion.h2
-                    className="text-4xl text-gray-700"
+                    className="md:text-4xl text-gray-700"
                     animate={{opacity: 100, y: 0}}
                     initial={{opacity: 0, y: 100}}
                     transition={{
@@ -38,12 +38,16 @@ function Home({page}) {
                           transition={{
                               delay: 1.5,
                               duration: 5
-                          }} href="#projects"><button className="p-1 ml-[33%] mt-10 border border-gray-600 rounded text-sm text-gray-600 hover:text-gray-300 hover:border-gray-300">view projects</button></motion.a>
+                          }} href="#projects">
+                    <button className="p-1 ml-[33%] mt-10 border border-gray-600 rounded text-sm text-gray-600 hover:text-gray-300 hover:border-gray-300">
+                        view projects
+                    </button>
+                </motion.a>
             </section>
 
-            <section className="flex justify-between">
+            <section className="hidden md:flex justify-between">
                 <div></div>
-                <img className="w-[90%]" src={parallax1} alt=""/>
+                <img className="w-[100%] md:w-[90%]" src={parallax1} alt=""/>
             </section>
         </motion.main>
     );
