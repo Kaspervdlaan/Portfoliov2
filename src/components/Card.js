@@ -30,7 +30,7 @@ function Card({image, title, descOne, descTwo, github, liveDemo, react, css}) {
 
                     <p className="flex justify-end gap-1 text-3xl text-blue-color cursor-pointer">
                         <a href={github} target="_blank" rel="noreferrer"><FaGithub className="hover:text-pink-color cursor-pointer"/></a>
-                        <a href={liveDemo} target="_blank" rel="noreferrer"><FaFirefox className="hover:text-pink-color cursor-pointer"/></a></p>
+                        {liveDemo && <a href={liveDemo} target="_blank" rel="noreferrer"><FaFirefox className="hover:text-pink-color cursor-pointer"/></a>}</p>
                 </div>
 
 

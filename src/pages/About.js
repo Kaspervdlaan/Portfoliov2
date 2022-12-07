@@ -23,11 +23,9 @@ function About({page, setAbout, setNone}) {
                     <span className="hover:text-green-color duration-200">der </span>
                     <span className="hover:text-orange-color duration-200">Laan</span>
                 </h2>
-                <p className="text-lg mb-4 md:max-w-[80%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nisi, odit repudiandae. Atque cum distinctio doloribus est fuga fugiat!
+                <p className="text-lg mb-4 md:max-w-[80%]">I am currently halfway finished doing the Fullstack developer bootcamp by NOVI hogeschool.
                 </p>
-                <p className="text-lg mb-4 md:max-w-[80%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nisi, odit repudiandae.
+                <p className="text-lg mb-4 md:max-w-[80%]"> In the last half year I’ve been hard at work following the front end side of the bootcamp. Here I have learned that I love the art of coding, from problem solving to always being able to learn more.
                 </p>
                 <p className="flex flex-wrap text-green-color text-7xl">
                     <FaHtml5 className=""/>
