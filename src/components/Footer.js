@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 function Footer() {
     const form = useRef();
-    const [popup, setPopup] = useState(false);
+    const [popup, setPopup] = useState(true);
     const [sent, setSent]= useState(false)
 
     const handleClick = () => {
@@ -43,7 +43,7 @@ function Footer() {
     };
 
     return (
-        <motion.footer animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: 200}} transition={{type: 'spring',delay: 2, duration: .7, bounce: .6}} className={!popup ? "flex flex-col w-[400px] mb-[-210px] mr-[-180px] h-fit text-xs bg-black fixed bottom-0 right-0 duration-100" : "flex flex-col w-[400px] mb-[0] h-fit text-xs bg-black fixed bottom-0 right-0 duration-100"}>
+        <motion.footer animate={{opacity: 100, y: 0}} initial={{opacity: 0, y: 200}} transition={{type: 'spring',delay: 2, duration: .7, bounce: .6}} className={!popup ? "flex flex-col w-screen md:w-[400px] mb-[-210px]  h-fit text-xs bg-black fixed bottom-0 right-0 md:right-10 duration-100" : "flex flex-col w-screen md:w-[400px] mb-[0] h-fit text-xs bg-black fixed bottom-0 right-0 md:right-10 duration-100"}>
             <div className=" ">
                 <p onClick={handleClick} className={popup ? "cursor-pointer text-orange-color" : "cursor-pointer text-green-color"}>{popup ? "[-]" : "[+]"}</p>
                 <p onClick={handleClick} className="pl-5 cursor-pointer">Please send me a message...</p>
@@ -59,7 +59,7 @@ function Footer() {
                     <p className="mb-2">Send your message?</p>
                     <div className="flex gap-7 mb-2 ">
                         <button type="submit" className="hover:text-green-color">[Y]es, send.</button>
-                        <button onClick={resetForm} className="hover:text-orange-color">[N]o, delete.</button>
+                        {/*<button onClick={resetForm} className="hover:text-orange-color">[N]o, delete.</button>*/}
                     </div>
                     {sent && <p>Your message has been sent.</p>}
                 </form>
