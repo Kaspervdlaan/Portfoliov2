@@ -23,9 +23,9 @@ function About({page, setAbout, setNone}) {
                     <span className="hover:text-green-color duration-200">der </span>
                     <span className="hover:text-orange-color duration-200">Laan</span>
                 </h2>
-                <p className="text-lg mb-4 md:max-w-[80%]">I am currently halfway finished doing the Fullstack developer bootcamp by NOVI hogeschool. In the last half year I’ve been hard at work following the front end side of the bootcamp. Here I have learned that I love the art of coding, from problem solving to always being able to learn more.
+                <p className="text-sm mb-4 md:max-w-[80%]">I am currently halfway finished doing the Fullstack developer bootcamp by NOVI hogeschool. In the last half year I’ve been hard at work following the front end side of the bootcamp. Here I have learned that I love the art of coding, from problem solving to always being able to learn more.
                 </p>
-                <p className="text-lg mb-4 md:max-w-[80%]">
+                <p className="md:text-lg mb-4 md:max-w-[80%]">
                 </p>
                 <p className="flex flex-wrap text-green-color text-7xl justify-center">
                     <FaHtml5 className=""/>
@@ -37,7 +37,7 @@ function About({page, setAbout, setNone}) {
                 </p>
             </section>
 
-            <section className="flex flex-1 justify-start text-left px-4">
+            <section className="lg:flex flex-1 justify-start text-left px-4">
 
                 <img className="md:max-w-xl object-contain p-2" src={logo} alt=""/>
             </section>
