@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import galactic from "../assets/galactic.png";
 import bvb from "../assets/bvb.png";
 import portfolio from "../assets/port.png"
+import gps from "../assets/gps1.png"
 import { useInViewport } from 'react-in-viewport';
 
 
@@ -19,6 +20,16 @@ function Projects({page, setProjects, setNone}) {
         <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl ">
 
             <section ref={projectRef} className="flex justify-center flex-wrap h-fit gap-5 m-20">
+
+                <Card
+                    image={gps}
+                    title="Gps tracking app"
+                    descOne="Big freelance project with one other developer. Live tracking, drawingpage, connection with ERP systems. My role was mostly frontend development."
+                    descTwo="Build using React, Vite, Firebase, Material UI, Googlemaps API, .Net backend."
+                    github="https://github.com/akoel/vdbroek-tracking"
+                    react="ReactJs"
+                    mui="Material UI"
+                />
 
                 <Card
                     image={galactic}

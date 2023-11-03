@@ -4,7 +4,7 @@ import {FaFirefox, FaGithub} from "react-icons/fa";
 
 
 
-function Card({image, title, descOne, descTwo, github, liveDemo, react, css}) {
+function Card({image, title, descOne, descTwo, github, liveDemo, react, css, mui}) {
     return (
 
             <article
@@ -21,10 +21,10 @@ function Card({image, title, descOne, descTwo, github, liveDemo, react, css}) {
                 <div className="flex justify-between items-center">
                     <div>
                       <span className="p-1 mt-1 mr-1 border border-orange-color rounded text-sm text-orange-color">
-                    {react}
+                    {react && react}
                 </span>
                         <span className="p-1 mt-1 mr-1 border border-orange-color rounded text-sm text-orange-color">
-                    {css}
+                    {css && css}{mui && mui}
                 </span>
                     </div>
 
