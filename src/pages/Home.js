@@ -16,7 +16,7 @@ function Home({page, setNone}) {
         <motion.main ref={homeRef} animate={{opacity: 100}} initial={{opacity: 0}} transition={{duration: 10}} id={page}
                      className="snap-start flex items-center justify-center h-[100vh] bg-black-color ">
 
-            <section  className="text-3xl md:text-4xl md:ml-20">
+            <section  className="text-3xl md:text-4xl md:ml-20 text-center md:text-left">
                 <motion.h1
                     className="md:text-5xl text-orange-color mb-2 shadowxl"
                     animate={{opacity: 100, y: 0}}

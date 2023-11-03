@@ -27,11 +27,11 @@ function Pages({state, setProjects, setAbout, setContact, setNone}) {
                    setAbout={setAbout}
             />
 
-            <Contact page="contact"
-                     state={state}
-                     setNone={setNone}
-                     setContact={setContact}
-            />
+            {/*<Contact page="contact"*/}
+            {/*         state={state}*/}
+            {/*         setNone={setNone}*/}
+            {/*         setContact={setContact}*/}
+            {/*/>*/}
 
         </div>
     );

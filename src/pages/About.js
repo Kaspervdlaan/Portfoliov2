@@ -39,7 +39,7 @@ function About({page, setAbout, setNone}) {
                 </p>
             </section>
 
-            <section className="flex flex-1 justify-start text-left px-4">
+            <section className="lg:flex flex-1 justify-start text-left px-4">
 
                 <img className="md:max-w-xl object-contain p-2" src={logo} alt=""/>
             </section>
