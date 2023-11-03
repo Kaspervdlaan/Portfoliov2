@@ -27,7 +27,7 @@ function About({page, setAbout, setNone}) {
                 </p>
                 <p className="text-lg mb-4 md:max-w-[80%]">I finished my fullstack developer bootcamp by Novi hogeschool in 2022. Since then i've been working freelance as a frontend developer under the name Codeerfabriek.
                 </p>
-                <p className="flex flex-wrap items-center text-green-color text-7xl">
+                <p className="flex flex-wrap items-center text-green-color text-7xl justify-center">
                     <FaHtml5 className=""/>
                     <FaCss3Alt className=""/>
                     <FaJsSquare className=""/>
