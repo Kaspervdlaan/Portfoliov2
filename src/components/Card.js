@@ -24,8 +24,12 @@ function Card({image, title, descOne, descTwo, github, liveDemo, react, css, mui
                     {react && react}
                 </span>
                         <span className="p-1 mt-1 mr-1 border border-orange-color rounded text-sm text-orange-color">
-                    {css && css}{mui && mui}
+                    {css && css}
                 </span>
+                {mui &&
+                <span className="p-1 mt-1 mr-1 border border-orange-color rounded text-sm text-orange-color">
+                    {mui}
+                </span>}
                     </div>
 
                     <p className="flex justify-end gap-1 text-3xl text-blue-color cursor-pointer">

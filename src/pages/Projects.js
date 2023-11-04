@@ -24,10 +24,11 @@ function Projects({page, setProjects, setNone}) {
                 <Card
                     image={gps}
                     title="Gps tracking app"
-                    descOne="Big freelance project with one other developer. Live tracking, drawingpage, connection with ERP systems. My role was mostly frontend development."
-                    descTwo="Build using React, Vite, Firebase, Material UI, Googlemaps API, .Net backend."
+                    descOne="Big freelance project with one other developer. "
+                    descTwo="Live tracking, drawingpage, connection with ERP systems. My role was mostly frontend development. Build using React, Vite, Firebase, Material UI, Googlemaps API, .Net backend."
                     github="https://github.com/akoel/vdbroek-tracking"
-                    react="ReactJs"
+                    react="React"
+                    css="JavaScript"
                     mui="Material UI"
                 />
 
@@ -38,7 +39,7 @@ function Projects({page, setProjects, setNone}) {
                     descTwo="Build using React, React hooks, React router, State, Authentication, Axios, Css modules."
                     github="https://github.com/Kaspervdlaan/SpaceApp"
                     liveDemo="https://chimerical-bublanina-2208d7.netlify.app/"
-                    react="ReactJs"
+                    react="React"
                     css="CSS"
                 />
 
@@ -49,7 +50,7 @@ function Projects({page, setProjects, setNone}) {
                     descTwo="Using React, NPM packages, tailwind and some custom css"
                     github="https://github.com/Kaspervdlaan/Bureau-van-Breukelen"
                     liveDemo="https://melodious-mousse-49311c.netlify.app/"
-                    react="ReactJs"
+                    react="React"
                     css="Tailwind"
                 />
 
@@ -60,7 +61,7 @@ function Projects({page, setProjects, setNone}) {
                     descOne="Yes the one that you are on!"
                     descTwo="Made with the help of multiple NPM packages."
                     github="https://github.com/Kaspervdlaan/Portfoliov2"
-                    react="ReactJs"
+                    react="React"
                     css="Tailwind"
                 />
 
