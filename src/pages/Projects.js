@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import galactic from "../assets/galactic.png";
 import bvb from "../assets/bvb.png";
 import portfolio from "../assets/port.png"
+import toptracker from "../assets/toptracker.PNG"
 import gps from "../assets/gps1.png"
 import { useInViewport } from 'react-in-viewport';
 
@@ -24,13 +25,16 @@ function Projects({page, setProjects, setNone}) {
                 <Card
                     image={gps}
                     title="Gps tracking app"
-                    descOne="Big freelance project with one other developer. "
-                    descTwo="Live tracking, drawingpage, connection with ERP systems. My role was mostly frontend development. Build using React, Vite, Firebase, Material UI, Googlemaps API, .Net backend."
+                    descOne="I am currently working on a big freelance project with one other developer."
+                    descTwo="Live tracking, drawingpage, connection with ERP systems. My role was mostly frontend development. Build using React, Javascript, Vite, Firebase, Material UI, Googlemaps API, .Net backend."
                     github="https://github.com/akoel/vdbroek-tracking"
+                    url="https://github.com/akoel/vdbroek-tracking"
                     react="React"
                     css="JavaScript"
                     mui="Material UI"
                 />
+
+
 
                 <Card
                     image={galactic}
@@ -47,15 +51,28 @@ function Projects({page, setProjects, setNone}) {
                     image={bvb}
                     title="Bureau van Breukelen"
                     descOne="Website made for client. Bureau van Breukelen porfolio website."
-                    descTwo="Using React, NPM packages, tailwind and some custom css"
+                    descTwo="Using React, NPM packages, tailwind.s"
                     github="https://github.com/Kaspervdlaan/Bureau-van-Breukelen"
                     liveDemo="https://melodious-mousse-49311c.netlify.app/"
+                    url="https://melodious-mousse-49311c.netlify.app/"
                     react="React"
                     css="Tailwind"
                 />
 
-
                 <Card
+                    image={toptracker}
+                    title="Top Tracker"
+                    descOne="Simple CRUD backend application, end assignment the backend module at NOVI hogeschool."
+                    descTwo="Build using Java, Springboot, PostgreSQL."
+                    github="https://github.com/Kaspervdlaan/toptracker"
+                    url="https://github.com/Kaspervdlaan/toptracker"
+                    react="Java"
+                    css="Springboot"
+                    mui="PostgreSQL"
+                />
+
+
+                {/* <Card
                     image={portfolio}
                     title="Portfolio website"
                     descOne="Yes the one that you are on!"
@@ -63,7 +80,7 @@ function Projects({page, setProjects, setNone}) {
                     github="https://github.com/Kaspervdlaan/Portfoliov2"
                     react="React"
                     css="Tailwind"
-                />
+                /> */}
 
             </section>
         </main>

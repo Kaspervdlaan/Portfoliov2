@@ -4,14 +4,14 @@ import {FaFirefox, FaGithub} from "react-icons/fa";
 
 
 
-function Card({image, title, descOne, descTwo, github, liveDemo, react, css, mui}) {
+function Card({image, title, descOne, descTwo, github, url, liveDemo, react, css, mui}) {
     return (
 
             <article
-            className="flex flex-col flex-1 min-w-[350px] grow-0 px-4 py-4 my-4 rounded-xl bg-black-color bg-opacity-90 shadow-2xl duration-200 hover:scale-[1.01]">
+            className="flex flex-col flex-1 min-w-[400px] sm:min-w-[350px] grow-0 px-4 py-4 my-4 rounded-xl bg-black-color bg-opacity-90 shadow-2xl duration-200 hover:scale-[1.01]">
 
             <picture className="pb-2 cursor-pointer border-b border-b-gray-500">
-                <a href={liveDemo} target="_blank" rel="noreferrer"><img className="rounded" src={image} alt="image"/></a>
+                <a href={url} target="_blank" rel="noreferrer"><img className="rounded" src={image} alt="image"/></a>
             </picture>
             <div className="p-2 flex flex-col h-full justify-between">
                 <h2 className="text-xl underline underline-offset-2 mb-1">{title}</h2>

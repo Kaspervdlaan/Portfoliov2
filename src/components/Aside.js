@@ -18,7 +18,7 @@ function Aside() {
                     </a>
                 </motion.li>
                 <motion.li animate={{opacity: 100, x: 0}} initial={{opacity: 0, x: -100}} transition={{type: 'spring',delay: .8, duration: .3}} className="w-[140px] h-[50px] flex justify-between items-center bg-green-color ml-[-90px] hover:ml-[-0px] duration-300 ">
-                    <a className="flex justify-between items-center w-full ml-4 mr-2" href="https://github.com/Kaspervdlaan" target="_blank" rel="noreferrer">
+                    <a className="flex justify-between items-center w-full ml-4 mr-2" href="https://drive.google.com/file/d/1bm_bBsHXztJKuIDpdjSXEnSO9eJPcbdx/view?usp=sharing" target="_blank" rel="noreferrer">
                         Resume <BsFillPersonLinesFill size={30}/>
                     </a>
                 </motion.li>
