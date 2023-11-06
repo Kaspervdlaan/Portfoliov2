@@ -14,7 +14,7 @@ function About({page, setAbout, setNone}) {
     }
 
     return (
-        <main id={page} className="snap-start min-h-[100vh] py-24 flex flex-col lg:flex-row items-center text-white text-4xl md:text-5xl justify-center gap-8 max-w-screen-3xl bg-black-color ">
+        <main id={page} className="snap-start min-h-[100vh] py-24 flex sm:flex-row items-center text-white text-4xl md:text-5xl justify-center gap-8 max-w-screen-3xl bg-black-color ">
             <section ref={myRef} className="flex flex-col flex-1 items-center lg:items-end text-center md:text-right px-4">
 
                 <h2 className="mb-4  font-bold">
@@ -39,7 +39,7 @@ function About({page, setAbout, setNone}) {
                 </p>
             </section>
 
-            <section className="lg:flex flex-1 justify-start text-left px-4">
+            <section className="hidden lg:flex flex-1 justify-start text-left px-4">
 
                 <img className="md:max-w-xl object-contain p-2" src={logo} alt=""/>
             </section>

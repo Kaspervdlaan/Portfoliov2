@@ -20,7 +20,7 @@ function Projects({page, setProjects, setNone}) {
     return (
         <main id={page} className="snap-start md:min-h-[100vh] h-auto flex flex-col items-center text-white justify-center max-w-screen-3xl ">
 
-            <section ref={projectRef} className="flex justify-center flex-wrap h-fit gap-5 m-20">
+            <section ref={projectRef} className="flex justify-center flex-col sm:flex-row flex-wrap h-fit gap-5 m-20">
 
                 <Card
                     image={gps}
